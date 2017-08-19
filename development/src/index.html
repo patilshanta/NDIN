@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <base href="/">
+  <!-- Semantic UI -->
+  <meta charset="UTF-8">
+  <title>Ionic App</title>
+
+
+  <!-- cordova.js required for cordova apps -->
+  <!--<script src="cordova.js"></script>-->
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+  </script>-->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="build/main.css" rel="stylesheet">
+
+
+</head>
+<body class="body-text-font-family body-font-size body-text-color" style="overflow-x: hidden;">
+
+  <!-- Ionic's root component and where the app will load -->
+   <ion-app></ion-app> 
+  <!--<app-root></app-root>-->
+
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+
+
+</body>
+</html>

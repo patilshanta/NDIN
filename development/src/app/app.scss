@@ -1,0 +1,176 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.info-modal-button-alignment {
+    float: right !important;
+}
+.info-modal-alignment {
+    padding-bottom: 1% !important;
+    padding-top: 1% !important;
+}
+.content-alignment {
+    padding-top: 3% !important;
+}
+.actions-alignment {
+    margin-top: 1% !important;
+}
+.icon-shadow {
+    -webkit-box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.nag-position{
+    position: fixed !important;
+}
+.profile-modal-width{
+    width: 500px !important;
+ }
+
+@media only screen and (min-width: 768px){
+   .profile-modal-alignment{
+         margin: -233px 0 0 -30% !important;
+   }
+ }
+
+@media only screen and (max-width: 767px){
+    .profile-modal-alignment{
+          margin: -233px 0 0 -35.5% !important;
+     }
+}
+
+@media only screen and (min-width: 992px){
+     .profile-modal-alignment{
+       margin: -233px 0 0 -260px !important;
+     }
+}
+
+@media only screen and (min-width: 1200px){
+   .profile-modal-alignment{
+         margin: -233px 0 0 -250px !important;
+   }
+}
+
+.show-component{
+    display: inherit !important;
+  }
+
+  .hide-component{
+    display: none !important;
+  }
+
+  .display-block{
+    display: block;
+  }
+
+  .documents-file-viewer{
+    overflow: hidden;
+  }
+
+  .no-items-found{
+    font-size: 3em !important;
+  }
+
+  /*Page related styles for scroll you to view*/
+  #documents-menu {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  #documents-view {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  #action-items-menu {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  #action-items-details {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  #messages-list {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  #messages-view {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 0% !important;
+    margin-left: 0% !important;
+    position: absolute;
+  }
+
+  #contactus {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+
+   #snackbar {
+        visibility: hidden;
+        width: 100%;
+        text-align: center;
+        border-radius: 2px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        height:12vh;
+        font-size: 17px;
+   }
+
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;} 
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;} 
+        to {bottom: 0; opacity: 0;}
+    }
+
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+    .snackbar-buttons{
+        margin-top: 1vh;
+    }
